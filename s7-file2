@@ -21,15 +21,7 @@ sudo apt-get update
 
 
 
-version: '3'
-services:
-  web:
-    image: nginx:latest
-    ports:
-      - "80:80"
-  db:
-    image: mysql:latest
-    environment:
+
       MYSQL_ROOT_PASSWORD: example_password
       MYSQL_DATABASE: example_db
       MYSQL_USER: example_user
