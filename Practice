@@ -20,9 +20,7 @@ services:
   worker1:
     image: your-worker-image:latest
 
-  worker2:
-    image: your-worker-image:latest
-
+  
   monitoring:
     image: your-monitoring-image:latest
     ports:
