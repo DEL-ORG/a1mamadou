@@ -7,7 +7,7 @@ services:
 
  
   database:
-    image: your-database-image:latest
+    image: your-database-image:v.0.02
     environment:
       MYSQL_ROOT_PASSWORD: example_password
       MYSQL_DATABASE: example_db
