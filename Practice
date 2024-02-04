@@ -1,0 +1,48 @@
+version: '3'
+services:
+  webapp:
+    image: your-webapp-image:latest
+    ports:
+      - "80:80"
+
+  frontend:
+    image: your-frontend-image:latest
+
+  backend:
+    image: your-backend-image:latest
+
+  database:
+    image: your-database-image:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: example_password
+      MYSQL_DATABASE: example_db
+      MYSQL_USER: example_user
+      MYSQL_PASSWORD: example_password
+
+  cache:
+    image: your-cache-image:latest
+
+  worker1:
+    image: your-worker-image:latest
+
+  worker2:
+    image: your-worker-image:latest
+
+  monitoring:
+    image: your-monitoring-image:latest
+    ports:
+      - "9090:9090"
+
+  logging:
+    image: your-logging-image:latest
+
+  message-broker:
+    image: your-message-broker-image:latest
+
+  proxy:
+    image: your-proxy-image:latest
+    ports:
+      - "8080:8080"
+
+  security:
+    image: your-security-image:latest
